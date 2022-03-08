@@ -20,16 +20,17 @@ public class SegregateEvenOddNumbers {
         while (left < right) {
 
             // check left and look for even
-            while (input.get(left) % 2 == 0) {
+            while (isEven(input.get(left))) {
                 left++;
             }
 
             // check right and look for odd
-            while (input.get(right) % 2 != 0) {
+            while (!isEven(input.get(right))) {
                 right--;
             }
 
             if (left < right) {
+                // swap left and right
                 int temp = input.get(left);
                 input.set(left, input.get(right));
                 input.set(right, temp);
@@ -42,5 +43,9 @@ public class SegregateEvenOddNumbers {
 
         System.out.println(moves);
         System.out.println(Arrays.toString(input.toArray()));
+    }
+
+    private static boolean isEven(int number) {
+        return number % 2 == 0;
     }
 }
