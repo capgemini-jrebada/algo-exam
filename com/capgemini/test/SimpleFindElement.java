@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /*
+ * Given an unsorted array of n elements, find if the element k is present in the array or not.
+ * 
  * Complete the 'findNumber' function below.
  *
  * The function is expected to return a STRING.
@@ -23,8 +25,7 @@ public class SimpleFindElement {
     }
 
 	public static String findNumber(List<Integer> arr, int k) {
-	  	
-    	boolean hasElement = arr.contains(k);
+	  	boolean hasElement = arr.contains(k);
     	return hasElement? "YES":"NO";
     }
 
