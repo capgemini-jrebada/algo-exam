@@ -54,18 +54,16 @@ public class AnagramCheck2 {
 				if (Arrays.toString(charArray1).equals(Arrays.toString(charArray2))) {
 					System.out.println(0);
 				} else {					
-					int counter = 0;
 				    List<Character> list = new LinkedList<>();
 				    for (char aChar : charArray1) {
 				        list.add(aChar);
 				    }
 				    for (char c : charArray2) {
 				        if (list.contains(c)) {
-				            list.remove(Character.valueOf(c));
-				            counter++;
+				            list.remove(Character.valueOf(c));				            
 				        }
 				    }				    
-				    System.out.println (charArray1.length - counter);
+				    System.out.println (list.size());
 				}				
 			}
 		}		
