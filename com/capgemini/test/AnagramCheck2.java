@@ -11,7 +11,7 @@ import java.util.List;
  * b = {eat, tar, drinking]
  * 
  * per matching index of each array, find whether:
- * 1. the strings dpes not match in length, output -1
+ * 1. the strings do not match in length, output -1
  * 2. the strings are anagrams, output 0
  * 3. how many chars do you need to make them anagrams, output n
  * 
